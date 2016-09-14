@@ -1,0 +1,420 @@
+
+        <!DOCTYPE html>
+        <head>
+            
+        
+            <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.min.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster-src.js"></script>
+        
+        
+        
+            
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/leaflet.markercluster.js"></script>
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.3/leaflet.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.Default.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.markercluster/0.4.0/MarkerCluster.css" />
+        
+        
+        
+            
+        
+            <link rel="stylesheet" href="https://raw.githubusercontent.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+        
+        
+        
+            
+            <style>
+
+            html, body {
+                width: 100%;
+                height: 100%;
+                margin: 0;
+                padding: 0;
+                }
+
+            #map {
+                position:absolute;
+                top:0;
+                bottom:0;
+                right:0;
+                left:0;
+                }
+            </style>
+            
+        
+            
+            <style> #map_f0aad39c704741889cefd089300bca30 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+        
+        
+        </head>
+        <body>
+            
+        
+            
+            <div class="folium-map" id="map_f0aad39c704741889cefd089300bca30" ></div>
+        
+        
+        
+        </body>
+        <script>
+            
+        
+            
+
+            var southWest = L.latLng(-90, -180);
+            var northEast = L.latLng(90, 180);
+            var bounds = L.latLngBounds(southWest, northEast);
+
+            var map_f0aad39c704741889cefd089300bca30 = L.map('map_f0aad39c704741889cefd089300bca30', {
+                                           center:[37.7797907143,-122.465206714],
+                                           zoom: 15,
+                                           maxBounds: bounds,
+                                           layers: [],
+                                           crs: L.CRS.EPSG3857
+                                         });
+            
+        
+        
+            
+            var tile_layer_f29d6629fbe34c5bacb1e884d085cc53 = L.tileLayer(
+                'https://stamen-tiles-{s}.a.ssl.fastly.net/watercolor/{z}/{x}/{y}.jpg',
+                {
+                    maxZoom: 18,
+                    minZoom: 1,
+                    attribution: 'Map tiles by <a href="http://stamen.com">Stamen Design</a>, under <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data by <a href="http://openstreetmap.org">OpenStreetMap</a>, under <a href="http://creativecommons.org/licenses/by-sa/3.0">CC BY SA</a>.',
+                    detectRetina: false
+                    }
+                ).addTo(map_f0aad39c704741889cefd089300bca30);
+
+        
+        
+            
+
+            var marker_a348057528c1495b94e1e087be015219 = L.marker(
+                [37.77911,-122.464188],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f0aad39c704741889cefd089300bca30);
+            
+        
+            
+
+                var icon_c59bff2cfe924419bd00708a2254cc00 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'black',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_a348057528c1495b94e1e087be015219.setIcon(icon_c59bff2cfe924419bd00708a2254cc00);
+            
+        
+            
+            var popup_734a337c320a4b8dadf8c98e2360d367 = L.popup({maxWidth: '300'});
+
+            
+                var html_211a69a42c784fbf8729eef544d24bb8 = $('         <div id="html_211a69a42c784fbf8729eef544d24bb8"                 style="width: 100.0%; height: 100.0%;">                 Home</div>                 ')[0];
+                popup_734a337c320a4b8dadf8c98e2360d367.setContent(html_211a69a42c784fbf8729eef544d24bb8);
+            
+
+            marker_a348057528c1495b94e1e087be015219.bindPopup(popup_734a337c320a4b8dadf8c98e2360d367);
+
+            
+        
+        
+            
+
+            var marker_5e325c411cb24b9fb72c5c89873b578d = L.marker(
+                [37.783707,-122.483002],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f0aad39c704741889cefd089300bca30);
+            
+        
+            
+
+                var icon_3998b593b1bf46d58ed081df5de38c1d = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_5e325c411cb24b9fb72c5c89873b578d.setIcon(icon_3998b593b1bf46d58ed081df5de38c1d);
+            
+        
+            
+            var popup_55d9a390be924636b7853450d4c3b5dc = L.popup({maxWidth: '300'});
+
+            
+                var html_72c1fdb52b9d4b719c7e14339ee1eadf = $('         <div id="html_72c1fdb52b9d4b719c7e14339ee1eadf"                 style="width: 100.0%; height: 100.0%;">                 1 - Pizzetta</div>                 ')[0];
+                popup_55d9a390be924636b7853450d4c3b5dc.setContent(html_72c1fdb52b9d4b719c7e14339ee1eadf);
+            
+
+            marker_5e325c411cb24b9fb72c5c89873b578d.bindPopup(popup_55d9a390be924636b7853450d4c3b5dc);
+
+            
+        
+        
+            
+
+            var marker_9eb07075d7054788a6d9e835992bcd67 = L.marker(
+                [37.781132,-122.469955],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f0aad39c704741889cefd089300bca30);
+            
+        
+            
+
+                var icon_b092c8a1bc824692bcca80b33e18e210 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_9eb07075d7054788a6d9e835992bcd67.setIcon(icon_b092c8a1bc824692bcca80b33e18e210);
+            
+        
+            
+            var popup_475bf481b9c146c996f8bde594e8f8f0 = L.popup({maxWidth: '300'});
+
+            
+                var html_e2343289e4ab4a3089e55e76f4778598 = $('         <div id="html_e2343289e4ab4a3089e55e76f4778598"                 style="width: 100.0%; height: 100.0%;">                 2 - Lamps Plus</div>                 ')[0];
+                popup_475bf481b9c146c996f8bde594e8f8f0.setContent(html_e2343289e4ab4a3089e55e76f4778598);
+            
+
+            marker_9eb07075d7054788a6d9e835992bcd67.bindPopup(popup_475bf481b9c146c996f8bde594e8f8f0);
+
+            
+        
+        
+            
+
+            var marker_bdd4f51cdb514ca1970576393d7d99f4 = L.marker(
+                [37.782784,-122.463509],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f0aad39c704741889cefd089300bca30);
+            
+        
+            
+
+                var icon_d455f2282890403e982fd754179a764e = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_bdd4f51cdb514ca1970576393d7d99f4.setIcon(icon_d455f2282890403e982fd754179a764e);
+            
+        
+            
+            var popup_d825fcd9251f4eb282d89442c0a2de6d = L.popup({maxWidth: '300'});
+
+            
+                var html_4b3bc45f52fb49e8b5cc2249f3010715 = $('         <div id="html_4b3bc45f52fb49e8b5cc2249f3010715"                 style="width: 100.0%; height: 100.0%;">                 1 - Toy Boat</div>                 ')[0];
+                popup_d825fcd9251f4eb282d89442c0a2de6d.setContent(html_4b3bc45f52fb49e8b5cc2249f3010715);
+            
+
+            marker_bdd4f51cdb514ca1970576393d7d99f4.bindPopup(popup_d825fcd9251f4eb282d89442c0a2de6d);
+
+            
+        
+        
+            
+
+            var marker_0eb1ee214fdc4908beb84446f3b5486c = L.marker(
+                [37.786205,-122.451843],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f0aad39c704741889cefd089300bca30);
+            
+        
+            
+
+                var icon_737918cd8cc84456a85dca4fd7798fa7 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0eb1ee214fdc4908beb84446f3b5486c.setIcon(icon_737918cd8cc84456a85dca4fd7798fa7);
+            
+        
+            
+            var popup_aec71bf734aa40ff883519acd113a421 = L.popup({maxWidth: '300'});
+
+            
+                var html_5c7010a45c5945519847a84dadf8195e = $('         <div id="html_5c7010a45c5945519847a84dadf8195e"                 style="width: 100.0%; height: 100.0%;">                 2 - Noah&#39;s Bagels</div>                 ')[0];
+                popup_aec71bf734aa40ff883519acd113a421.setContent(html_5c7010a45c5945519847a84dadf8195e);
+            
+
+            marker_0eb1ee214fdc4908beb84446f3b5486c.bindPopup(popup_aec71bf734aa40ff883519acd113a421);
+
+            
+        
+        
+            
+
+            var marker_75d0131b60a24ba997abb24c8d54487b = L.marker(
+                [37.775581,-122.458336],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f0aad39c704741889cefd089300bca30);
+            
+        
+            
+
+                var icon_25aa0e6d96e84c5b8be6bef740a5d1d5 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_75d0131b60a24ba997abb24c8d54487b.setIcon(icon_25aa0e6d96e84c5b8be6bef740a5d1d5);
+            
+        
+            
+            var popup_18fe87b04b4d49e6a27c521b85f3db41 = L.popup({maxWidth: '300'});
+
+            
+                var html_8c67012164f84858b4516c9f08071a9b = $('         <div id="html_8c67012164f84858b4516c9f08071a9b"                 style="width: 100.0%; height: 100.0%;">                 3 - Arguello Market</div>                 ')[0];
+                popup_18fe87b04b4d49e6a27c521b85f3db41.setContent(html_8c67012164f84858b4516c9f08071a9b);
+            
+
+            marker_75d0131b60a24ba997abb24c8d54487b.bindPopup(popup_18fe87b04b4d49e6a27c521b85f3db41);
+
+            
+        
+        
+            
+
+            var marker_4593e2f281f74773a7faf133702648a7 = L.marker(
+                [37.770016,-122.465614],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_f0aad39c704741889cefd089300bca30);
+            
+        
+            
+
+                var icon_b58c74f5c99e4a848b444cd37249fd79 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4593e2f281f74773a7faf133702648a7.setIcon(icon_b58c74f5c99e4a848b444cd37249fd79);
+            
+        
+            
+            var popup_052f04f6879049d08f5f4568e9799c7f = L.popup({maxWidth: '300'});
+
+            
+                var html_0720c928463448bfbe39aceb96077669 = $('         <div id="html_0720c928463448bfbe39aceb96077669"                 style="width: 100.0%; height: 100.0%;">                 4 - de Young</div>                 ')[0];
+                popup_052f04f6879049d08f5f4568e9799c7f.setContent(html_0720c928463448bfbe39aceb96077669);
+            
+
+            marker_4593e2f281f74773a7faf133702648a7.bindPopup(popup_052f04f6879049d08f5f4568e9799c7f);
+
+            
+        
+        
+        
+        </script>
+        
