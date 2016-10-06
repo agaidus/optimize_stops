@@ -1,6 +1,7 @@
 ![title](stop_map.png)
 [Live Version](https://rawgit.com/agaidus/optimize_stops/master/optimize_stops_3_people_walk.html)
 
+[Jupyter Notebook](optimize_stops.ipynb)
 
 ### Traveling Salesman Problem
 
