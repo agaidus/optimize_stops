@@ -1,5 +1,7 @@
 ![title](stop_map.png)
 
+![Live Version](optimize_stops_3_people_walk.html)
+
 ### Traveling Salesman Problem
 
 The traveling salesman problem is a classic optimization problem that seeks to find the most efficient route to connect a given set of points. I recently discovered a set of services built by the open-source mapping company, Mapzen that make this complex problem easy to approximate for a relatively small numbers of stops. Given a set of coordinates, the Mapzen [optimize route](https://mapzen.com/documentation/mobility/optimized/api-reference/) service uses road network data to produce a time-distance matrix between these points, and then uses an optimization algorithm to determine a route that minimizes total travel time. This can be done for one of three modes of transportation - pedestrian, bicycle, and automobile. They have a great [example](https://mapzen.com/blog/optimized-route/) with a cool map where they determine the optimal route to visit burrito 'dispensaries' in San Francisco.
