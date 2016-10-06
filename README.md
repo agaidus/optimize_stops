@@ -1,5 +1,6 @@
 ![title](stop_map.png)
-[Live Version!](optimize_stops_3_people_walk.html)
+[Live Version](https://rawgit.com/agaidus/optimize_stops/master/optimize_stops_3_people_walk.html)
+
 
 ### Traveling Salesman Problem
 
